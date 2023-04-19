@@ -7,7 +7,6 @@
     <title>Zabir's quests</title>
     <link rel="stylesheet" href="./main.css" />
 
-    <!-- Alpine js  https://alpinejs.dev/ -->
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -101,7 +100,10 @@
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
-            <a href="https://www.youtube.com/c/Furcifer" class="hover:brightness-200 transition inline-block">
+            <a
+              href="https://www.youtube.com/c/Furcifer"
+              class="hover:brightness-200 transition inline-block"
+            >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
                 alt="Youtube"
@@ -138,7 +140,6 @@
       <!-- Mobile menu, show/hide based on menu state. -->
       <div x-show="mobileNav" class="sm:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pt-2 pb-3">
-
           <a
             href="/"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -165,146 +166,35 @@
       </div>
     </nav>
 
-    <!-- hero section -->
-
-
-    <!-- News section -->
-    <section class="mt-12">
-      <div class="max-w-6xl mx-auto px-5 sm:px-10">
-        <h3
-          class="text-gray-800 text-lg sm:text-3xl font-bold mb-5 border-b pb-4 border-gray-300"
-        >
-          Software
-        </h3>
-        <div class="space-y-6">
-          <!-- blogs -->
-          <div
-            class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
+    <section class="bg-white py-12 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:max-w-4xl">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
-            <p class="text-gray-600 font-semibold text-base mb-1">
-                Audioperm
-                
+            A Deeper Dive Into What Deep Spatiotemporal Networks Encode:
+            Quantifying Static vs. Dynamic Information (CVPR 2022)
+          </h2>
+          <div class="text-sm text-gray-500 mt-1 mb-8">June 7, 2022</div>
+
+          <img
+            src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+            class="w-full max-h-96 rounded-lg object-cover"
+            alt=""
+          />
+
+
+          <div class="mt-10">
+            <h3 class="mb-2 text-lg font-semibold text-gray-900">Abstract</h3>
+            <p class="text-sm text-gray-500">
+              Deep spatiotemporal models are used in a variety of computer vision tasks, such as action recognition and video object segmentation. Currently, there is a limited understanding of what information is captured by these models in their intermediate representations. For example, while it has been observed that action recognition algorithms are heavily influenced by visual appearance in single static frames, there is no quantitative methodology for evaluating such static bias in the latent representation compared to bias toward dynamic information (e.g., motion). We tackle this challenge by proposing a novel approach for quantifying the static and dynamic biases of any spatiotemporal model. To show the efficacy of our approach, we analyse two widely studied tasks, action recognition and video object segmentation. Our key findings are threefold: (i) Most examined spatiotemporal models are biased toward static information; although, certain two-stream architectures with cross-connections show a better balance between the static and dynamic information captured. (ii) Some datasets that are commonly assumed to be biased toward dynamics are actually biased toward static information. (iii) Individual units (channels) in an architecture can be biased toward static, dynamic or a combination of the two.
             </p>
-            <p class="text-gray-700 text-base">
-                A python library for generating different permutations of audible segments from audio files.
+
+            <h3 class="mb-2 text-lg font-semibold text-gray-900 mt-6">Method Overview</h3>
+            <p class="text-sm text-gray-500">
+              We quantify the amount of static and dynamic information contained in spatio-temporal models through an estimation of mutual information between static and dynamic pairs. For action recognition models, the static pairs consist of the same video with shuffled frames. For the dynamic pair, we use the same video with two different styles. For video object segmentation (we explore two-stream models in this work), we use flow-jitter to perturb the dynamic information and stylization to perturb the static information.
             </p>
-            <a
-              href="https://github.com/zabir-nabil/audioperm"
-              class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
-            >
-              <span>Source</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </a>
           </div>
-          <div
-            class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
-          >
-            <p class="text-gray-600 font-semibold text-base mb-1">
-                Byakto TTS [bangla text to speech]
-            </p>
-            <p class="text-gray-700 text-base">
-                Multilingual (Bangla, English) real-time speech synthesis library in Python. [65 GitHub ⭐]
-
-            </p>
-            <a
-              href="https://github.com/zabir-nabil/bangla-tts"
-              class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
-            >
-              <span>Source</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </a>
-          </div>
-          <div
-            class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
-          >
-            <p class="text-gray-600 font-semibold text-base mb-1">
-              PyTorch Speech Dataloader (torch-speech-dataloader)
-            </p>
-            <p class="text-gray-700 text-base">
-                A ready-to-use pytorch dataloader for audio classification, speech classification, speaker recognition, etc. with in-GPU augmentations.
-
-            </p>
-            <a
-              href="https://github.com/zabir-nabil/torch-speech-dataloader"
-              class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
-            >
-              <span>Source</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </a>
-          </div>
-
-        <div
-          class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
-        >
-          <p class="text-gray-600 font-semibold text-base mb-1">
-              Qt Motion Analysis
-              
-          </p>
-          <p class="text-gray-700 text-base">
-            Pose estimation with descriptive analysis.
-          </p>
-          <a
-            href="https://github.com/zabir-nabil/qt-motion-analysis"
-            class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
-          >
-            <span>Source</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </a>
-        </div>
-
-
         </div>
       </div>
     </section>
