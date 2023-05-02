@@ -100,6 +100,12 @@
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >Weekend Projects</a
             >
+
+            <a
+              href="https://medium.com/@furcifer"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Blog</a
+            >
               </div>
             </div>
           </div>
@@ -195,6 +201,12 @@
         class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
         >Weekend Projects</a
       >
+
+      <a
+              href="https://medium.com/@furcifer"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Blog</a
+            >
         </div>
       </div>
     </nav>
@@ -265,6 +277,26 @@
           @click.prevent="tag = 'Neural Network'"
           :class="[tag === 'Neural Network' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
           >Neural Network</a
+        >
+
+        <a
+          href="#"
+          class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+          @click.prevent="tag = 'Augmentation'"
+          :class="[tag === 'Augmentation' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+          >Augmentation</a
+        >
+
+
+          </div>
+
+          <div class="flex items-center gap-x-4 text-xs mt-6">
+            <a
+          href="#"
+          class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+          @click.prevent="tag = 'RNN'"
+          :class="[tag === 'RNN' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+          >RNN</a
         >
           </div>
 
@@ -436,7 +468,7 @@
                 </div>
                 <div class="flex items-center space-x-4 mt-3">
                   <a
-                    href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32"
+                    href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Fd1-G4YAAAAJ&citation_for_view=Fd1-G4YAAAAJ:eQOLeE2rZwMC"
                     class="text-blue-500 text-sm hover:text-blue-400 underline"
                     >Abstract</a
                   >
@@ -453,11 +485,194 @@
                 </div>
               </div>
             </article>
+
             <article
-              x-data="{tags: ['python']}"
-              x-show="tags.includes(tag) || tag === 'all'"
-              x-clock
-              class="relative isolate flex flex-col gap-8 lg:flex-row"
+            x-data="{tags: ['Augmentation', 'Vision', 'CNN', 'Neural Network']}"
+            x-show="tags.includes(tag) || tag === 'all'"
+            x-clock
+            class="relative isolate flex flex-col gap-8 lg:flex-row"
+          >
+            <div
+              class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
+            >
+              <img
+                src="assets/ladonnet.PNG"
+                alt=""
+                class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+              />
+              <div
+                class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+              ></div>
+            </div>
+            <div>
+              <div class="flex items-center gap-x-4 text-xs">
+                <template x-for="tagItem in tags">
+                  <span
+                    class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 capitalize"
+                    x-text="tagItem"
+                    ></span
+                  >
+                </template>
+              </div>
+              <div class="group relative max-w-xl">
+                <h3
+                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
+                >
+                  <a href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32">
+                    Residual Net for Car Detection with spatial transformation
+                  </a>
+                </h3>
+                <p class="mt-5 text-sm leading-6 text-gray-600">
+                  <strong>Research Questions: </strong>  Can we train a rotation-invariant convolutional neural network by designing a multi-head model? How can we formulate a robust learning scheme by proposing a novel augmentation algorithm that scales to emulate a large set of image degradation and occlusion policies?
+                  
+                  </p>
+              </div>
+              <div class="flex items-center space-x-4 mt-3">
+                <a
+                  href="https://dl.acm.org/doi/abs/10.1145/3377049.3377092"
+                  class="text-blue-500 text-sm hover:text-blue-400 underline"
+                  >Abstract</a
+                >
+                <a
+                  href="https://www.researchgate.net/publication/337312376_Residual_Net_for_Car_Detection_with_spatial_transformation"
+                  class="text-blue-500 text-sm hover:text-blue-400 underline"
+                  >PDF</a
+                >
+                <a
+                  href="https://github.com/zabir-nabil/spark-augmentation/"
+                  class="text-blue-500 text-sm hover:text-blue-400 underline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+
+
+          <article
+          x-data="{tags: ['RNN', 'Biomedical AI', 'Neural Network', 'Signal Processing']}"
+          x-show="tags.includes(tag) || tag === 'all'"
+          x-clock
+          class="relative isolate flex flex-col gap-8 lg:flex-row"
+        >
+          <div
+            class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
+          >
+            <img
+              src="assets/idc_gru.PNG"
+              alt=""
+              class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+            />
+            <div
+              class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+            ></div>
+          </div>
+          <div>
+            <div class="flex items-center gap-x-4 text-xs">
+              <template x-for="tagItem in tags">
+                <span
+                  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 capitalize"
+                  x-text="tagItem"
+                  ></span
+                >
+              </template>
+            </div>
+            <div class="group relative max-w-xl">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
+              >
+                <a href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32">
+                  Invasive Ductal Carcinoma Detection by A Gated Recurrent Unit Network with Self Attention
+                </a>
+              </h3>
+              <p class="mt-5 text-sm leading-6 text-gray-600">
+                <strong>Research Questions: </strong>  Can we train a rotation-invariant convolutional neural network by designing a multi-head model? How can we formulate a robust learning scheme by proposing a novel augmentation algorithm that scales to emulate a large set of image degradation and occlusion policies?
+                
+                </p>
+            </div>
+            <div class="flex items-center space-x-4 mt-3">
+              <a
+                href="https://ieeexplore.ieee.org/document/9068841"
+                class="text-blue-500 text-sm hover:text-blue-400 underline"
+                >Abstract</a
+              >
+              <a
+                href="https://www.researchgate.net/publication/340684475_Invasive_Ductal_Carcinoma_Detection_by_A_Gated_Recurrent_Unit_Network_with_Self_Attention"
+                class="text-blue-500 text-sm hover:text-blue-400 underline"
+                >PDF</a
+              >
+              
+            </div>
+          </div>
+        </article>
+
+
+        <article
+        x-data="{tags: ['RNN', 'Biomedical AI', 'Neural Network', 'Signal Processing']}"
+        x-show="tags.includes(tag) || tag === 'all'"
+        x-clock
+        class="relative isolate flex flex-col gap-8 lg:flex-row"
+      >
+        <div
+          class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
+        >
+          <img
+            src="assets/idc_gru.PNG"
+            alt=""
+            class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+          />
+          <div
+            class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+          ></div>
+        </div>
+        <div>
+          <div class="flex items-center gap-x-4 text-xs">
+            <template x-for="tagItem in tags">
+              <span
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 capitalize"
+                x-text="tagItem"
+                ></span
+              >
+            </template>
+          </div>
+          <div class="group relative max-w-xl">
+            <h3
+              class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
+            >
+              <a href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32">
+                Classification of ECG signals by dot Residual LSTM Network with data augmentation for anomaly detection
+              </a>
+            </h3>
+            <p class="mt-5 text-sm leading-6 text-gray-600">
+              <strong>Research Questions: </strong>  Can we train a rotation-invariant convolutional neural network by designing a multi-head model? How can we formulate a robust learning scheme by proposing a novel augmentation algorithm that scales to emulate a large set of image degradation and occlusion policies?
+              
+              </p>
+          </div>
+          <div class="flex items-center space-x-4 mt-3">
+            <a
+              href="https://ieeexplore.ieee.org/document/9038287"
+              class="text-blue-500 text-sm hover:text-blue-400 underline"
+              >Abstract</a
+            >
+            <a
+              href="https://www.researchgate.net/publication/337159046_Classification_of_ECG_signals_by_dot_Residual_LSTM_Network_with_data_augmentation_for_anomaly_detection"
+              class="text-blue-500 text-sm hover:text-blue-400 underline"
+              >PDF</a
+            >
+
+            <a
+              href="https://github.com/zabir-nabil/dot-res-lstm"
+              class="text-blue-500 text-sm hover:text-blue-400 underline"
+              >Code</a
+            >
+            
+          </div>
+        </div>
+      </article>
+
+
+            <article
+
             >
               <!-- <div
                 class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
@@ -471,6 +686,8 @@
                   class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
                 ></div>
               </div> -->
+
+              <strong> Complete List: </strong> <a style = "color: #60b9ff " href="https://scholar.google.com/citations?user=Fd1-G4YAAAAJ&hl=en"> 🎓 Google Scholar >> </a>
 
             </article>
 
