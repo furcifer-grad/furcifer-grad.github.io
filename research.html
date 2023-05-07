@@ -298,6 +298,22 @@
           :class="[tag === 'RNN' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
           >RNN</a
         >
+
+        <a
+          href="#"
+          class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+          @click.prevent="tag = 'ECG'"
+          :class="[tag === 'ECG' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+          >ECG</a
+        >
+
+        <a
+          href="#"
+          class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+          @click.prevent="tag = 'Anomaly Detection'"
+          :class="[tag === 'Anomaly Detection' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+          >Anomaly Detection</a
+        >
           </div>
 
           <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
@@ -333,7 +349,7 @@
                   <h3
                     class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
                   >
-                    <a href="single.html">
+                    <a href="https://arxiv.org/abs/2104.05889">
                       <!-- <span class="absolute inset-0"></span> -->
                       Fibro-CoSANet: Pulmonary Fibrosis Prognosis Prediction using a Convolutional Self Attention Network
                     </a>
@@ -457,7 +473,7 @@
                   <h3
                     class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
                   >
-                    <a href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32">
+                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Fd1-G4YAAAAJ&citation_for_view=Fd1-G4YAAAAJ:eQOLeE2rZwMC">
                       Motor Imagery EEG Classification using Random Subspace Ensemble Network with Variable Length Features
                     </a>
                   </h3>
@@ -518,7 +534,7 @@
                 <h3
                   class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
                 >
-                  <a href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32">
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3377049.3377092">
                     Residual Net for Car Detection with spatial transformation
                   </a>
                 </h3>
@@ -581,7 +597,7 @@
               <h3
                 class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
               >
-                <a href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32">
+                <a href="https://ieeexplore.ieee.org/document/9068841">
                   Invasive Ductal Carcinoma Detection by A Gated Recurrent Unit Network with Self Attention
                 </a>
               </h3>
@@ -608,7 +624,7 @@
 
 
         <article
-        x-data="{tags: ['RNN', 'Biomedical AI', 'Neural Network', 'Signal Processing']}"
+        x-data="{tags: ['RNN', 'Neural Network', 'Signal Processing', 'ECG', 'Anomaly Detection']}"
         x-show="tags.includes(tag) || tag === 'all'"
         x-clock
         class="relative isolate flex flex-col gap-8 lg:flex-row"
@@ -617,7 +633,7 @@
           class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
         >
           <img
-            src="assets/idc_gru.PNG"
+            src="assets/cvae_model.PNG"
             alt=""
             class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
           />
@@ -639,12 +655,13 @@
             <h3
               class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
             >
-              <a href="https://link.springer.com/chapter/10.1007/978-981-13-7564-4_32">
+              <a href="https://ieeexplore.ieee.org/document/9038287">
                 Classification of ECG signals by dot Residual LSTM Network with data augmentation for anomaly detection
               </a>
             </h3>
             <p class="mt-5 text-sm leading-6 text-gray-600">
-              <strong>Research Questions: </strong>  Can we train a rotation-invariant convolutional neural network by designing a multi-head model? How can we formulate a robust learning scheme by proposing a novel augmentation algorithm that scales to emulate a large set of image degradation and occlusion policies?
+              <strong>Research Questions: </strong>  Can we propose a conditional variational autoencoder (CVAE) to generate anomalous ECG signals as an augmentation tool? To minimize the number of parameters in the
+              network, multiple <strong>dot layers</strong> are designed. These dot layers can be considered as <strong>non-learnable similarity gates</strong>, which can mix features from two branches in the network.
               
               </p>
           </div>

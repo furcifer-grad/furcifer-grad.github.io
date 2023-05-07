@@ -7,7 +7,6 @@
     <title>Zabir's quests</title>
     <link rel="stylesheet" href="./main.css" />
 
-    <!-- Alpine js  https://alpinejs.dev/ -->
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -85,7 +84,7 @@
               >
 
               <a
-                href="software.html"
+                href="#"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >Software</a
               >
@@ -111,68 +110,67 @@
             </div>
           </div>
           <div
-            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-          >
-            <a href="https://scholar.google.com/citations?user=Fd1-G4YAAAAJ&hl=en&oi=ao" class="hover:brightness-200 transition inline-block">
-              <img
-                src="assets/Google_Scholar_logo.svg"
-                alt="Youtube"
-                class="object-contain"
-                width="25"
-              />
-            </a>
-            <a
-              href="https://stackoverflow.com/users/4622046/zabir-al-nazi?tab=profile"
-              class="hover:brightness-150 transition ml-3 sm:ml-4 inline-block"
-            >
-              <img
-                src="assets/stack-overflow.svg"
-                alt="Youtube"
-                class="object-contain"
-                width="20"
-              />
-            </a>
-            <a
-              href="https://github.com/zabir-nabil"
-              class="hover:brightness-150 transition ml-3 sm:ml-4 inline-block"
-            >
-              <img
-                src="assets/github-mark-white.svg"
-                alt="Youtube"
-                class="object-contain"
-                width="25"
-              />
-            </a>
-          <a
-            href="https://www.youtube.com/c/Furcifer"
-            class="hover:brightness-150 transition ml-3 sm:ml-4 inline-block"
-          >
+          class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+        >
+          <a href="https://scholar.google.com/citations?user=Fd1-G4YAAAAJ&hl=en&oi=ao" class="hover:brightness-200 transition inline-block">
             <img
-              src="assets/YouTube_full-color_icon_(2017).svg"
+              src="assets/Google_Scholar_logo.svg"
               alt="Youtube"
               class="object-contain"
               width="25"
             />
           </a>
           <a
-          href="https://twitter.com/PseudoEmpirical"
+            href="https://stackoverflow.com/users/4622046/zabir-al-nazi?tab=profile"
+            class="hover:brightness-150 transition ml-3 sm:ml-4 inline-block"
+          >
+            <img
+              src="assets/stack-overflow.svg"
+              alt="Youtube"
+              class="object-contain"
+              width="20"
+            />
+          </a>
+          <a
+            href="https://github.com/zabir-nabil"
+            class="hover:brightness-150 transition ml-3 sm:ml-4 inline-block"
+          >
+            <img
+              src="assets/github-mark-white.svg"
+              alt="Youtube"
+              class="object-contain"
+              width="25"
+            />
+          </a>
+        <a
+          href="https://www.youtube.com/c/Furcifer"
           class="hover:brightness-150 transition ml-3 sm:ml-4 inline-block"
         >
           <img
-            src="assets/Logo_of_Twitter.svg"
+            src="assets/YouTube_full-color_icon_(2017).svg"
             alt="Youtube"
             class="object-contain"
             width="25"
           />
         </a>
-          </div>
+        <a
+        href="https://twitter.com/PseudoEmpirical"
+        class="hover:brightness-150 transition ml-3 sm:ml-4 inline-block"
+      >
+        <img
+          src="assets/Logo_of_Twitter.svg"
+          alt="Youtube"
+          class="object-contain"
+          width="25"
+        />
+      </a>
+        </div>
         </div>
       </div>
 
       <!-- Mobile menu, show/hide based on menu state. -->
       <div x-show="mobileNav" class="sm:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pt-2 pb-3">
-
           <a
           href="index.html"
           class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -187,7 +185,7 @@
         >
 
         <a
-          href="software.html"
+          href="#"
           class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >Software</a
         >
@@ -213,149 +211,168 @@
       </div>
     </nav>
 
-    <!-- hero section -->
-
-
-    <!-- News section -->
-    <section class="mt-12">
-      <div class="max-w-6xl mx-auto px-5 sm:px-10">
-        <h3
-          class="text-gray-800 text-lg sm:text-3xl font-bold mb-5 border-b pb-4 border-gray-300"
-        >
-          Software
-        </h3>
-        <div class="space-y-6">
-          <!-- blogs -->
-          <div
-            class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
+    <section class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:max-w-4xl" x-data="{tag: 'all'}">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
-            <p class="text-gray-600 font-semibold text-base mb-1">
-                Audioperm
-                
-            </p>
-            <p class="text-gray-700 text-base">
-                A python library for generating different permutations of audible segments from audio files.
-            </p>
+            Research
+          </h2>
+
+          <div class="flex items-center gap-x-4 text-xs mt-6">
             <a
-              href="https://github.com/zabir-nabil/audioperm"
-              class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
+              href="#"
+              class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+              @click.prevent="tag = 'all'"
+              :class="[tag === 'all' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >All</a
             >
-              <span>Source</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </a>
-          </div>
-          <div
-            class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
+            <a
+              href="#"
+              class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+              @click.prevent="tag = 'Attention'"
+              :class="[tag === 'Attention' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >Attention</a
+            >
+            <a
+              href="#"
+              class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+              @click.prevent="tag = 'CNN'"
+              :class="[tag === 'CNN' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >CNN</a
+            >
+            <a
+            href="#"
+            class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+            @click.prevent="tag = 'vision'"
+            :class="[tag === 'vision' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+            >Vision</a
           >
-            <p class="text-gray-600 font-semibold text-base mb-1">
-                Byakto TTS [bangla text to speech]
-            </p>
-            <p class="text-gray-700 text-base">
-                Multilingual (Bangla, English) real-time speech synthesis library in Python. [65 GitHub ⭐]
-
-            </p>
             <a
-              href="https://github.com/zabir-nabil/bangla-tts"
-              class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
+              href="#"
+              class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+              @click.prevent="tag = 'Biomedical AI'"
+              :class="[tag === 'Biomedical AI' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >Biomedical AI</a
             >
-              <span>Source</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </a>
-          </div>
-          <div
-            class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
+
+            <a
+            href="#"
+            class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+            @click.prevent="tag = 'Signal Processing'"
+            :class="[tag === 'Signal Processing' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+            >Signal Processing</a
           >
-            <p class="text-gray-600 font-semibold text-base mb-1">
-              PyTorch Speech Dataloader (torch-speech-dataloader)
-            </p>
-            <p class="text-gray-700 text-base">
-                A ready-to-use pytorch dataloader for audio classification, speech classification, speaker recognition, etc. with in-GPU augmentations.
-
-            </p>
-            <a
-              href="https://github.com/zabir-nabil/torch-speech-dataloader"
-              class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
-            >
-              <span>Source</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </a>
-          </div>
-
-        <div
-          class="block group hover:bg-gray-100 rounded-lg transition hover:cursor-default p-4"
-        >
-          <p class="text-gray-600 font-semibold text-base mb-1">
-              Qt Motion Analysis
-              
-          </p>
-          <p class="text-gray-700 text-base">
-            Pose estimation with descriptive analysis.
-          </p>
           <a
-            href="https://github.com/zabir-nabil/qt-motion-analysis"
-            class="inline-flex items-center space-x-2 text-blue-600 hover:brightness-110 transition-transform hover:cursor-pointer mt-3 font-medium"
+            href="#"
+            class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+            @click.prevent="tag = 'EEG'"
+            :class="[tag === 'EEG' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+            >EEG</a
           >
-            <span>Source</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4"
+          <a
+          href="#"
+          class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+          @click.prevent="tag = 'Neural Network'"
+          :class="[tag === 'Neural Network' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+          >Neural Network</a
+        >
+
+
+
+          </div>
+
+
+          <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+            <article
+              x-data="{tags: ['Biomedical AI', 'vision', 'Attention', 'CNN']}"
+              x-show="tags.includes(tag) || tag === 'all'"
+              x-clock
+              class="relative isolate flex flex-col gap-8 lg:flex-row"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </a>
-        </div>
+              <div
+                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
+              >
+                <img
+                  src="assets/alpr.PNG"
+                  alt=""
+                  class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+                />
+                <div
+                  class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+                ></div>
+              </div>
+              <div>
+                <div class="flex items-center gap-x-4 text-xs">
+                  <template x-for="tagItem in tags">
+                    <span
+                      class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 capitalize"
+                      x-text="tagItem"
+                      ></span
+                    >
+                  </template>
+                </div>
+                <div class="group relative max-w-xl">
+                  <h3
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
+                  >
+                    <a href="https://arxiv.org/abs/2104.05889">
+                      <!-- <span class="absolute inset-0"></span> -->
+                      Automated License Plate Recognition / Registration System
+                    </a>
+                  </h3>
+                  <p class="mt-5 text-sm leading-6 text-gray-600">
+                    <strong>Summary: </strong>  Given the lung CT scans, demographics, and FVC of a patient at the current time, can we predict the prognosis of Idiopathic pulmonary fibrosis  <strong>(IPF)</strong> in the future? Can we formulate an <strong>intuitive metric</strong> for the prognosis that the multi-modal model will predict instead of noisy time-series modeling?
+                    
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4 mt-3">
+                  <a
+                    href="https://arxiv.org/abs/2104.05889"
+                    class="text-blue-500 text-sm hover:text-blue-400 underline"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://www.cs.ryerson.ca/~amirul/pmb_66_22_225013.pdf"
+                    class="text-blue-500 text-sm hover:text-blue-400 underline"
+                    >System Description</a
+                  >
+                  <a
+                    href="https://github.com/zabir-nabil/Fibro-CoSANet"
+                    class="text-blue-500 text-sm hover:text-blue-400 underline"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
 
 
+            <article
+
+            >
+              <!-- <div
+                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+                  alt=""
+                  class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+                />
+                <div
+                  class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+                ></div>
+              </div> -->
+
+              <strong> Complete List: </strong> <a style = "color: #60b9ff " href="https://scholar.google.com/citations?user=Fd1-G4YAAAAJ&hl=en"> 🎓 Google Scholar >> </a>
+
+            </article>
+
+          </div>
         </div>
       </div>
     </section>
+    
 
     <footer class="bg-gray-200 p-5 py-10 flex items-center justify-center mt-8">
       <p class="text-center text-gray-700 text-sm">
