@@ -217,7 +217,7 @@
           <h2
             class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
-            Research
+            Application
           </h2>
 
           <div class="flex items-center gap-x-4 text-xs mt-6">
@@ -231,46 +231,32 @@
             <a
               href="#"
               class="relative z-10 rounded-full px-3 py-1.5 font-medium"
-              @click.prevent="tag = 'Attention'"
-              :class="[tag === 'Attention' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
-              >Attention</a
+              @click.prevent="tag = 'Vision'"
+              :class="[tag === 'Vision' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >Vision</a
             >
             <a
               href="#"
               class="relative z-10 rounded-full px-3 py-1.5 font-medium"
-              @click.prevent="tag = 'CNN'"
-              :class="[tag === 'CNN' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
-              >CNN</a
+              @click.prevent="tag = 'LLM'"
+              :class="[tag === 'LLM' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >LLM</a
             >
             <a
             href="#"
             class="relative z-10 rounded-full px-3 py-1.5 font-medium"
-            @click.prevent="tag = 'vision'"
-            :class="[tag === 'vision' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
-            >Vision</a
+            @click.prevent="tag = 'XAI'"
+            :class="[tag === 'XAI' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+            >XAI</a
           >
             <a
               href="#"
               class="relative z-10 rounded-full px-3 py-1.5 font-medium"
-              @click.prevent="tag = 'Biomedical AI'"
-              :class="[tag === 'Biomedical AI' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
-              >Biomedical AI</a
+              @click.prevent="tag = 'Search'"
+              :class="[tag === 'Search' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >Search</a
             >
 
-            <a
-            href="#"
-            class="relative z-10 rounded-full px-3 py-1.5 font-medium"
-            @click.prevent="tag = 'Signal Processing'"
-            :class="[tag === 'Signal Processing' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
-            >Signal Processing</a
-          >
-          <a
-            href="#"
-            class="relative z-10 rounded-full px-3 py-1.5 font-medium"
-            @click.prevent="tag = 'EEG'"
-            :class="[tag === 'EEG' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
-            >EEG</a
-          >
           <a
           href="#"
           class="relative z-10 rounded-full px-3 py-1.5 font-medium"
@@ -286,7 +272,7 @@
 
           <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
             <article
-              x-data="{tags: ['Biomedical AI', 'vision', 'Attention', 'CNN']}"
+              x-data="{tags: ['Neural Network', 'Vision']}"
               x-show="tags.includes(tag) || tag === 'all'"
               x-clock
               class="relative isolate flex flex-col gap-8 lg:flex-row"
@@ -329,17 +315,17 @@
                 </div>
                 <div class="flex items-center space-x-4 mt-3">
                   <a
-                    href="https://arxiv.org/abs/2104.05889"
+                    href="https://www.youtube.com/watch?v=09CQgsO5IUw"
                     class="text-blue-500 text-sm hover:text-blue-400 underline"
                     >Demo</a
                   >
                   <a
-                    href="https://www.cs.ryerson.ca/~amirul/pmb_66_22_225013.pdf"
+                    href="https://zabir.quest/assets/ALPR_system_description.pdf"
                     class="text-blue-500 text-sm hover:text-blue-400 underline"
                     >System Description</a
                   >
                   <a
-                    href="https://github.com/zabir-nabil/Fibro-CoSANet"
+                    href="https://stackoverflow.com/questions/61867541/parallel-gpu-execution-with-multiple-darknet-models-in-python/61888173#61888173"
                     class="text-blue-500 text-sm hover:text-blue-400 underline"
                     >Code</a
                   >
