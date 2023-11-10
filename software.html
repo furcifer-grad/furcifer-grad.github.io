@@ -242,6 +242,23 @@
               :class="[tag === 'LLM' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
               >LLM</a
             >
+
+            <a
+              href="#"
+              class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+              @click.prevent="tag = 'Speech'"
+              :class="[tag === 'Speech' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >Speech</a
+            >
+
+            <a
+              href="#"
+              class="relative z-10 rounded-full px-3 py-1.5 font-medium"
+              @click.prevent="tag = 'Biometrics'"
+              :class="[tag === 'Biometrics' ? 'bg-gray-600 text-gray-50' : ' bg-gray-50 text-gray-600']"
+              >Biometrics</a
+            >
+            
             <a
             href="#"
             class="relative z-10 rounded-full px-3 py-1.5 font-medium"
@@ -309,8 +326,70 @@
                     </a>
                   </h3>
                   <p class="mt-5 text-sm leading-6 text-gray-600">
-                    <strong>Summary: </strong>  Given the lung CT scans, demographics, and FVC of a patient at the current time, can we predict the prognosis of Idiopathic pulmonary fibrosis  <strong>(IPF)</strong> in the future? Can we formulate an <strong>intuitive metric</strong> for the prognosis that the multi-modal model will predict instead of noisy time-series modeling?
-                    
+                    The ALPR system, an epitome of cutting-edge technology, utilizes Optical Character Recognition (OCR) on images for precise extraction of vehicle registration data. Driven by GRPC for seamless client-server communication, it integrates YOLOv3 and YOLOv4 models for meticulous object detection and a MongoDB NoSQL database for efficient data storage. The registration process, involving frame resizing, base64 conversion, and dynamic queue management, ensures optimal data processing. With a character-level accuracy of 93%, the ALPR system stands as a robust solution for real-time tracking and law enforcement, with ongoing technical exploration aimed at refining algorithms and integrating state-of-the-art models.
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4 mt-3">
+                  <a
+                    href="https://www.youtube.com/watch?v=09CQgsO5IUw"
+                    class="text-blue-500 text-sm hover:text-blue-400 underline"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://zabir.quest/assets/ALPR_system_description.pdf"
+                    class="text-blue-500 text-sm hover:text-blue-400 underline"
+                    >System Description</a
+                  >
+                  <a
+                    href="https://stackoverflow.com/questions/61867541/parallel-gpu-execution-with-multiple-darknet-models-in-python/61888173#61888173"
+                    class="text-blue-500 text-sm hover:text-blue-400 underline"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+
+
+                        <article
+              x-data="{tags: ['Biometrics', 'Speech', 'Nueral Network']}"
+              x-show="tags.includes(tag) || tag === 'all'"
+              x-clock
+              class="relative isolate flex flex-col gap-8 lg:flex-row"
+            >
+              <div
+                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
+              >
+                <img
+                  src="assets/demo.gif"
+                  alt=""
+                  class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+                />
+                <div
+                  class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+                ></div>
+              </div>
+              <div>
+                <div class="flex items-center gap-x-4 text-xs">
+                  <template x-for="tagItem in tags">
+                    <span
+                      class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 capitalize"
+                      x-text="tagItem"
+                      ></span
+                    >
+                  </template>
+                </div>
+                <div class="group relative max-w-xl">
+                  <h3
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600"
+                  >
+                    <a href="https://arxiv.org/abs/2104.05889">
+                      <!-- <span class="absolute inset-0"></span> -->
+                      Automated Speaker Recognition Engine (ASRE)
+                    </a>
+                  </h3>
+                  <p class="mt-5 text-sm leading-6 text-gray-600">
+                    The ALPR system, an epitome of cutting-edge technology, utilizes Optical Character Recognition (OCR) on images for precise extraction of vehicle registration data. Driven by GRPC for seamless client-server communication, it integrates YOLOv3 and YOLOv4 models for meticulous object detection and a MongoDB NoSQL database for efficient data storage. The registration process, involving frame resizing, base64 conversion, and dynamic queue management, ensures optimal data processing. With a character-level accuracy of 93%, the ALPR system stands as a robust solution for real-time tracking and law enforcement, with ongoing technical exploration aimed at refining algorithms and integrating state-of-the-art models.
                   </p>
                 </div>
                 <div class="flex items-center space-x-4 mt-3">
@@ -350,7 +429,7 @@
                 ></div>
               </div> -->
 
-              <strong> Complete List: </strong> <a style = "color: #60b9ff " href="https://scholar.google.com/citations?user=Fd1-G4YAAAAJ&hl=en"> 🎓 Google Scholar >> </a>
+              <strong> Complete List: </strong> <a style = "color: #60b9ff " href="https://github.com/zabir-nabil"> 🐈‍⬛ GitHub >> </a>
 
             </article>
 
