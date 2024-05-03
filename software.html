@@ -287,20 +287,20 @@
           </div>
 
 
-          <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+          <div class="mt-16  lg:mt-20 grid gap-8 gap-y-12 lg:gap-y-20 md:grid-cols-2">
             <article
               x-data="{tags: ['Neural Network', 'Vision']}"
               x-show="tags.includes(tag) || tag === 'all'"
               x-clock
-              class="relative isolate flex flex-col gap-8 lg:flex-row"
+              class="relative isolate flex flex-col gap-5"
             >
               <div
-                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-72 lg:shrink-0"
+                class="relative w-full rounded-2xl overflow-hidden"
               >
                 <img
                   src="assets/alpr.PNG"
                   alt=""
-                  class="absolute inset-0 h-auto w-full bg-gray-50 object-contain"
+                  class="h-auto w-full bg-gray-50 object-cover max-h-64"
                 />
               </div>
               <div>
@@ -351,15 +351,15 @@
               x-data="{tags: ['Vision', 'Search', 'Nueral Network']}"
               x-show="tags.includes(tag) || tag === 'all'"
               x-clock
-              class="relative isolate flex flex-col gap-8 lg:flex-row"
+              class="relative isolate flex flex-col gap-5"
             >
               <div
-                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-72 lg:shrink-0"
+                class="relative w-full rounded-2xl overflow-hidden"
               >
                 <img
                   src="assets/bangla_clip_1.png"
                   alt=""
-                  class="absolute inset-0 h-auto w-full bg-gray-50 object-contain"
+                  class="h-auto w-full bg-gray-50 object-contain max-h-64"
                 />
               </div>
               <div>
@@ -411,15 +411,15 @@
               x-data="{tags: ['LLM', 'Search']}"
               x-show="tags.includes(tag) || tag === 'all'"
               x-clock
-              class="relative isolate flex flex-col gap-8 lg:flex-row"
+              class="relative isolate flex flex-col gap-5"
             >
               <div
-                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-72 lg:shrink-0"
+                class="relative w-full rounded-2xl overflow-hidden"
               >
                 <img
                   src="assets/llm_search.png"
                   alt=""
-                  class="absolute inset-0 h-auto w-full bg-gray-50 object-contain"
+                  class="h-auto w-full bg-gray-50 object-cover max-h-64"
                 />
               </div>
               <div>
@@ -471,15 +471,15 @@
               x-data="{tags: ['Biometrics', 'Speech', 'Nueral Network']}"
               x-show="tags.includes(tag) || tag === 'all'"
               x-clock
-              class="relative isolate flex flex-col gap-8 lg:flex-row"
+              class="relative isolate flex flex-col gap-5"
             >
               <div
-                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-72 lg:shrink-0"
+                class="relative w-full rounded-2xl overflow-hidden"
               >
                 <img
                   src="assets/demo.gif"
                   alt=""
-                  class="absolute inset-0 h-auto w-full bg-gray-50 object-contain"
+                  class="h-auto w-full bg-gray-50 object-cover max-h-64"
                 />
               </div>
               <div>
@@ -531,15 +531,15 @@
               x-data="{tags: ['XAI']}"
               x-show="tags.includes(tag) || tag === 'all'"
               x-clock
-              class="relative isolate flex flex-col gap-8 lg:flex-row"
+              class="relative isolate flex flex-col gap-5"
             >
               <div
-                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-72 lg:shrink-0"
+                class="relative w-full rounded-2xl overflow-hidden"
               >
                 <img
                   src="assets/counterfactual.gif"
                   alt=""
-                  class="absolute inset-0 h-auto w-full bg-gray-50 object-contain"
+                  class="h-auto w-full bg-gray-50 object-cover max-h-64"
                 />
               </div>
               <div>
@@ -587,28 +587,30 @@
 
 
 
-            <article
 
-            >
-              <!-- <div
-                class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
-                  alt=""
-                  class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
-                />
-                <div
-                  class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
-                ></div>
-              </div> -->
-
-              <strong> Complete List: </strong> <a style = "color: #60b9ff " href="https://github.com/zabir-nabil"> 🐈‍⬛  GitHub >> </a>
-
-            </article>
 
 
     
+
+          </div>
+
+          <div
+          class="mt-10"
+          >
+            <!-- <div
+              class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+                alt=""
+                class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+              />
+              <div
+                class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+              ></div>
+            </div> -->
+
+            <strong> Complete List: </strong> <a style = "color: #60b9ff " href="https://github.com/zabir-nabil"> 🐈‍⬛  GitHub >> </a>
 
           </div>
         </div>
